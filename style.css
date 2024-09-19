@@ -1,0 +1,328 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+p{
+    margin: 10px 0;
+}
+
+/* Utility Class */
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.clr{
+    clear: both;
+}
+/* Navbar */
+#navbar{
+    background: #fff;
+    color: #333;
+    overflow: auto;
+}
+
+#navbar a{
+    color: #000;
+}
+
+#navbar img{
+    float: left;
+    padding-top: 20px;
+    width: 120px;
+    height: 50px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li, #navbar ul i{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    background-color: #fff;
+    color: teal;
+}
+
+/* showcase */
+
+#showcase {
+    background: #fff;
+    height: 300px;
+}
+
+#showcase .showcase-content{
+    font-size: 20px;
+    line-height: 1.2em;
+    padding-top: 50px;
+
+}
+
+.showcase-content h1 {
+    text-align: center;
+    position: relative; 
+    padding-bottom: 20px;
+}
+
+.showcase-content h1::after {
+    content: '';
+    display: block;
+    width: 70px;      /* 20px width as requested */
+    height: 5px;      /* 5px height to simulate font size */
+    background-color: rgb(255, 179, 0); /* Mid yellow color */
+    margin: 15px auto 0; /* Center it with auto and give a little space */
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+}
+/* Block styling */
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.block-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.block-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.block-description {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* Blog Section Container */
+.blog-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Section Heading */
+.blog-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Grid Layout */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Individual Grid Item */
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Image */
+.blog-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/* Blog Content (Category, Title, Paragraph) */
+.blog-content {
+    padding: 15px;
+}
+
+/* Blog Category */
+.blog-category {
+    font-size: 14px;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Blog Post Title */
+.blog-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Small Paragraph */
+.blog-paragraph {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Grid for smaller screens */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Main yellow background section */
+.yellow-bg {
+    background-color: #f7c442;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White container in the middle */
+.form-container {
+    background-color: white;
+    width: 35%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form heading and text */
+.form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-text a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Input field styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .required {
+    color: red;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer text with links */
+.form-footer {
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-footer a {
+    color: blue;
+}
+
+.form-footer a.underline {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;  /* Dark background */
+    color: white;            /* White text */
+    text-align: center;       /* Center text */
+    padding: 20px 0;          /* Padding for spacing */
+    font-size: 14px;          /* Font size */
+}
+
+.footer p {
+    margin: 0;               /* Remove margin from paragraph */
+}
